@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -42,14 +43,14 @@ const About = () => {
               </div>
             </div>
           </div>
-          <a
-            href='#'
+          <Link
+            to='#'
             className='inline-block lg:block lg:w-5/6 lg:text-left mt-12 lg:mt-16 mx-auto'
           >
             <button className='btn bg-purple-800 p-4 lg:text-lg text-white rounded-lg'>
               Download CV
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -5,15 +5,15 @@ const Home = () => {
     <section id='home' className='home mb-16 lg:mb-32'>
       <div className='flex flex-wrap gap-y-8'>
         <div className='flex flex-col flex-auto justify-center items-start lg:order-1 basis-1/6 lg:basis-1/12 gap-8 lg:gap-10 text-center w-1/3'>
-          <a href='#' className='social-link'>
+          <Link to='#' className='social-link'>
             <i className='fab fa-linkedin text-5xl lg:text-4xl'></i>
-          </a>
-          <a href='#' className='social-link text-5xl lg:text-4xl'>
+          </Link>
+          <Link to='#' className='social-link text-5xl lg:text-4xl'>
             <i className='fab fa-github'></i>
-          </a>
-          <a href='#' className='social-link'>
+          </Link>
+          <Link to='#' className='social-link'>
             <i className='fa-regular fa-envelope text-5xl lg:text-4xl'></i>
-          </a>
+          </Link>
         </div>
 
         <div className='flex-auto basis-5/6 lg:basis-4/12 lg:order-last relative rounded-full truncate aspect-square'>
@@ -33,11 +33,11 @@ const Home = () => {
             Self taugh web developer. Experienced in using javascript
             technologies frontend and backend. Love solving problem.
           </p>
-          <a href='#contact'>
+          <Link to='#contact'>
             <button className='btn bg-purple-800 text-white lg:text-lg p-4 rounded-t-lg rounded-bl-lg w-fit'>
               Contact Me
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
