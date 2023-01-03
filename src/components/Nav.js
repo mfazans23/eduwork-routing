@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Nav = () => {
   return (
@@ -8,20 +8,41 @@ const Nav = () => {
         <div className='nav-logo justify-start text-2xl font-bold w-fit mr-auto p-3 border-2 rounded-tr-lg rounded-bl-lg'>
           Faza
         </div>
-        <Link to='#home' className='text-lg p-4 md:text-xl'>
+        <Link
+          to='home'
+          spy={true}
+          smooth={true}
+          duration={500}
+          className='text-lg font-medium cursor-pointer p-4 md:text-xl'
+        >
           Home
         </Link>
-        <Link to='#about' className='text-lg p-4 md:text-xl'>
+        <Link
+          to='about'
+          spy={true}
+          smooth={true}
+          duration={500}
+          className='text-lg font-medium cursor-pointer p-4 md:text-xl'
+        >
           About
         </Link>
-        <Link to='#skill' className='text-lg p-4 md:text-xl'>
+        <Link
+          to='skill'
+          spy={true}
+          smooth={true}
+          duration={500}
+          className='text-lg font-medium cursor-pointer p-4 md:text-xl'
+        >
           Skills
         </Link>
-        <Link to='#contact' className='text-lg p-4 md:text-xl'>
+        <Link
+          to='contact'
+          spy={true}
+          smooth={true}
+          duration={500}
+          className='text-lg font-medium cursor-pointer p-4 md:text-xl'
+        >
           Contact
-        </Link>
-        <Link to='#' className='text-lg p-4 md:text-xl'>
-          <i className='fas fa-moon'></i>
         </Link>
       </div>
     </nav>
