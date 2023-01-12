@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -9,37 +9,25 @@ const Nav = () => {
           Faza
         </div>
         <Link
-          to='home'
-          spy={true}
-          smooth={true}
-          duration={500}
+          to='/'
           className='text-lg font-medium cursor-pointer p-4 md:text-xl'
         >
           Home
         </Link>
         <Link
-          to='about'
-          spy={true}
-          smooth={true}
-          duration={500}
+          to='/about'
           className='text-lg font-medium cursor-pointer p-4 md:text-xl'
         >
           About
         </Link>
         <Link
-          to='skill'
-          spy={true}
-          smooth={true}
-          duration={500}
+          to='/skill'
           className='text-lg font-medium cursor-pointer p-4 md:text-xl'
         >
           Skills
         </Link>
         <Link
-          to='contact'
-          spy={true}
-          smooth={true}
-          duration={500}
+          to='/contact'
           className='text-lg font-medium cursor-pointer p-4 md:text-xl'
         >
           Contact
